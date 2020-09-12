@@ -20,4 +20,4 @@ end
 
 notify_slack("書斎の二酸化炭素濃度が#{CO2_LIMIT}ppmを超えました: 現在【#{co2}ppm】") if co2 > CO2_LIMIT
 
-puts co2
+puts "#{Time.now}: #{co2} ppm"
